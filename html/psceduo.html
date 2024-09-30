@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>psecdo classes & psecdo elements</title>
+        <style>
+            input[type="number"]:out-of-range{
+                border: 2px solid red;
+            }
+            input[type="number"]:in-range
+            {
+                border: 20px solid green;
+            }
+            input[type="email"]:invalid
+            {
+                border: 20px solid green;
+            }
+            p::first-line
+            {
+                text-decoration: underline;
+            }
+            p::first-letter
+            {
+                font-size: 20px;
+                color: red;
+            }
+            p::before
+            {
+                content: 'klu:';
+            }
+            p::after
+            {
+                content: "end;";
+            }
+            p::selection
+            {
+                background-color: blue;
+                color: green;
+            }
+            li::marker
+            {
+                color: red;
+            }
+            .ul
+            {
+                list-style-type: none;
+            }
+            .ul li::before
+            {
+                content: "\2713";
+                color: red;
+                margin-right: 5px;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <input type="number" placeholder="enter age" min="15" max="18"  style="width: 500px;"><br/>
+        <input type="email" placeholder="enter email"><br/>
+        <p>
+            asfkdscdsfsdalfdsfksdfsdgdskgdslkgdsfsdafgsdfwifsf asdgcvdkcdsvdslkvdsvdsdfsgdsfivsdfgdfsgfdvfdvfdvfsd gxcvxckdvkdsvdsvdsvdsvsxvdsvsxvlksdvlksvsdvskvsdvdsvfdgdfgdfgfsgsfdgfddfgdfzgdfgdfgdfgdfdsffdszdfzdfzdfzdzffdzdfzgdfzfdxzfdbdfbdfzdfxcvfsgfgxcvbcxvxvxcvxvxvxvxvxvcxbv
+        </p>
+        <ul>
+            <li>klu</li>
+            <li>PFSD</li>
+            <li>FSD</li>
+            <li>SWD</li>
+        </ul>
+        <ul class="ul">
+            <li>klu</li>
+            <li>PFSD</li>
+            <li>FSD</li>
+            <li>SWD</li>
+        </ul>
+
+    </body>
+</html>
